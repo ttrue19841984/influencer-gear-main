@@ -1,0 +1,120 @@
+
+    @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Open+Sans:wght@400;700;800&family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@400;500;600;700&family=Work+Sans:wght@400;500;600;700;800&display=swap');
+
+ /* common shared styles here */
+
+    *{
+        margin:0;
+        padding:0;
+        box-sizing:border-box;
+        font-family:'Poppins', sans-serif;
+    }
+    .btn-primary{
+        background-color:#E02C6D;
+        color:#fff;
+        border:none;
+        padding:10px 24px;
+
+    }
+
+/* nav related styles here */
+nav{
+    /* border:2px solid red; */
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:80px 140px;
+    
+}
+nav h3{
+    /* border:2px solid yellow; */
+}
+nav ul{
+    /* border:2px solid green; */
+    list-style-type:none;
+    display:flex;
+    
+
+}
+nav li{
+    /* border:2px solid red; */
+    margin-left:34px;
+    
+}
+nav li a{
+    /* border:2px solid purple; */
+    text-decoration:none;
+}
+
+/* banner related styles here */
+.banner-container{
+    /* border:2px solid red; */
+    max-width:100%;
+    padding:80px 140px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+.banner-content{
+    /* border:2px solid purple; */
+    margin-right:200px;
+}
+.banner-img{
+    /* border:2px solid yellow; */
+    background-image:url("../images/action.png");
+    background-position:center;
+    background-size:cover;
+    background-repeat:no-repeat;
+    object-fit:cover;
+}
+.banner-container img{
+    width:100%;
+}
+/* e-commers section styles here */
+.ecomers-container{
+    /* border:2px solid red; */
+    display:grid;
+    grid-template-columns:repeat(7, 1fr);
+    align-items:center;
+    padding:20px 220px;
+}
+/* popular section styles here */
+
+
+/* mobile devices */
+@media screen and (max-width:576px){
+    .banner-container,
+    nav,
+    nav ul
+    {
+        flex-direction:column;
+    }
+    nav,
+    .banner-container
+    {
+        padding:45px;
+    }
+    .banner-content{
+        margin-right:0;
+    }
+    .banner-img img{
+        width:100%;
+    }
+    .ecomers-container{
+        grid-template-columns:1fr;
+          
+    }
+    .ecomers-container img{
+        margin-top:20px;
+    }
+}
+@media screen and (min-width:576px) and (max-width:920px){
+    .banner-img img{
+        width:100%;
+        padding-top:100px;
+    }
+    .ecomers-container{
+        grid-template-columns:1fr;
+          
+    }
+}
